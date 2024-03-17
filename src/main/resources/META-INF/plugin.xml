@@ -1,0 +1,53 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin require-restart="true">
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.example.demo</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Demo</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="aleiwenyong@outlook.com" url="https://www.yourcompany.com">aierx</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>This Plugin should help to link work items</description>
+
+    <actions>
+        <action class="com.example.demo.NotifyAction" description="hello world" text ="aaa">
+            <add-to-group group-id="ToolsMenu"/>
+        </action>
+    </actions>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Simple File" implementationClass="com.example.demo.SimpleFileType" fieldName="INSTANCE" language="Simple" extensions="simple"/>
+        <lang.parserDefinition language="Simple" implementationClass="org.intellij.sdk.language.SimpleParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Simple" implementationClass="org.intellij.sdk.language.SimpleSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="org.intellij.sdk.language.SimpleColorSettingsPage"/>
+        <annotator language="JAVA" implementationClass="org.intellij.sdk.language.SimpleAnnotator"/>
+        <codeInsight.lineMarkerProvider language="JAVA" implementationClass="org.intellij.sdk.language.SimpleLineMarkerProvider"/>
+        <completion.contributor language="Simple" implementationClass="org.intellij.sdk.language.lab9.SimpleCompletionContributor"/>
+        <psi.referenceContributor language="JAVA" implementation="org.intellij.sdk.language.lab10.SimpleReferenceContributor"/>
+        <lang.refactoringSupport language="Simple" implementationClass="org.intellij.sdk.language.lab10.SimpleRefactoringSupportProvider"/>
+        <lang.findUsagesProvider language="Simple" implementationClass="org.intellij.sdk.language.lab11.SimpleFindUsagesProvider"/>
+        <lang.foldingBuilder language="JAVA" implementationClass="org.intellij.sdk.language.lab12.SimpleFoldingBuilder"/>
+        <gotoSymbolContributor implementation="org.intellij.sdk.language.lab13.SimpleChooseByNameContributor"/>
+        <lang.psiStructureViewFactory language="Simple" implementationClass="org.intellij.sdk.language.lab14.SimpleStructureViewFactory"/>
+        <navbar implementation="org.intellij.sdk.language.lab15.SimpleStructureAwareNavbar"/>
+        <lang.formatter language="Simple" implementationClass="org.intellij.sdk.language.lab16.SimpleFormattingModelBuilder"/>
+        <codeStyleSettingsProvider implementation="org.intellij.sdk.language.lab17.SimpleCodeStyleSettingsProvider"/>
+        <langCodeStyleSettingsProvider implementation="org.intellij.sdk.language.lab17.SimpleLanguageCodeStyleSettingsProvider"/>
+        <lang.commenter language="Simple" implementationClass="org.intellij.sdk.language.lab18.SimpleCommenter"/>
+        <lang.documentationProvider language="Simple" implementationClass="org.intellij.sdk.language.lab20.SimpleDocumentationProvider"/>
+        <spellchecker.support language="Simple" implementationClass="org.intellij.sdk.language.lab21.SimpleSpellcheckingStrategy"/>
+    </extensions>
+
+</idea-plugin>
