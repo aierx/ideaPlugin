@@ -49,4 +49,11 @@ tasks {
     publishPlugin {
         token.set(System.getenv("PUBLISH_TOKEN"))
     }
+    runIde {
+        autoReloadPlugins.set(true)
+    }
+
+    buildSearchableOptions{
+        enabled = false
+    }
 }

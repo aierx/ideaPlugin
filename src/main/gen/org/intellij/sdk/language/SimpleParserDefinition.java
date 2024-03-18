@@ -16,49 +16,49 @@ import org.intellij.sdk.language.psi.SimpleTypes;
 import org.jetbrains.annotations.NotNull;
 
 final class SimpleParserDefinition implements ParserDefinition {
-
-  public static final IFileElementType FILE = new IFileElementType(SimpleLanguage.INSTANCE);
-
-  @NotNull
-  @Override
-  public Lexer createLexer(Project project) {
-    return new SimpleLexerAdapter();
-  }
-
-  @NotNull
-  @Override
-  public TokenSet getCommentTokens() {
-    return SimpleTokenSets.COMMENTS;
-  }
-
-  @NotNull
-  @Override
-  public TokenSet getStringLiteralElements() {
-    return TokenSet.EMPTY;
-  }
-
-  @NotNull
-  @Override
-  public PsiParser createParser(final Project project) {
-    return new SimpleParser();
-  }
-
-  @NotNull
-  @Override
-  public IFileElementType getFileNodeType() {
-    return FILE;
-  }
-
-  @NotNull
-  @Override
-  public PsiFile createFile(@NotNull FileViewProvider viewProvider) {
-    return new SimpleFile(viewProvider);
-  }
-
-  @NotNull
-  @Override
-  public PsiElement createElement(ASTNode node) {
-    return SimpleTypes.Factory.createElement(node);
-  }
-
+	
+	public static final IFileElementType FILE = new IFileElementType(SimpleLanguage.INSTANCE);
+	
+	@NotNull
+	@Override
+	public Lexer createLexer(Project project) {
+		return new SimpleLexerAdapter();
+	}
+	
+	@NotNull
+	@Override
+	public TokenSet getCommentTokens() {
+		return SimpleTokenSets.COMMENTS;
+	}
+	
+	@NotNull
+	@Override
+	public TokenSet getStringLiteralElements() {
+		return TokenSet.EMPTY;
+	}
+	
+	@NotNull
+	@Override
+	public PsiParser createParser(final Project project) {
+		return new SimpleParser();
+	}
+	
+	@NotNull
+	@Override
+	public IFileElementType getFileNodeType() {
+		return FILE;
+	}
+	
+	@NotNull
+	@Override
+	public PsiFile createFile(@NotNull FileViewProvider viewProvider) {
+		return new SimpleFile(viewProvider);
+	}
+	
+	@NotNull
+	@Override
+	public PsiElement createElement(ASTNode node) {
+		return SimpleTypes.Factory.createElement(node);
+	}
+	
 }

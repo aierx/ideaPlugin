@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04d14cb6-7742-4026-a4f1-88b1f66a7637" name="Changes" comment="" />
+    <list default="true" id="04d14cb6-7742-4026-a4f1-88b1f66a7637" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleColorSettingsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleColorSettingsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleLineMarkerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleLineMarkerProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleParserDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleParserDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimplePsiImplUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimplePsiImplUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleSyntaxHighlighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleSyntaxHighlighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleSyntaxHighlighterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleSyntaxHighlighterFactory.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,37 +50,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="demo" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="intellij" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -92,6 +71,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2023.1.5/2d48b199b6b41ad2dd415ed933e95a3ca8d3979/ideaIC-2023.1.5/lib/app.jar!/com/intellij/lang/jsp/JspFileViewProvider.class" root0="SKIP_INSPECTION" />
@@ -132,7 +114,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build demo.executor": "Run",
-    "Gradle.Run Plugin.executor": "Debug",
+    "Gradle.Run Plugin.executor": "Run",
     "Gradle.demo [assemble].executor": "Run",
     "Gradle.demo [buildDependents].executor": "Run",
     "Gradle.demo [buildNeeded].executor": "Run",
@@ -148,19 +130,24 @@
     "Gradle.demo [mainClasses].executor": "Run",
     "Gradle.demo [properties].executor": "Run",
     "Gradle.demo [setupDependencies].executor": "Run",
+    "Gradle.ideaPlugin [setupDependencies].executor": "Run",
     "Kotlin script (Beta).build.gradle.kts.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "19",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/aleiwe/Desktop/demo/src/main/gen/org/intellij/sdk/language/psi/impl",
-    "last_opened_file_path": "C:/Users/aleiwe/Desktop/demo",
+    "last_opened_file_path": "C:/Users/aleiwe/Desktop/ideaPlugin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -178,7 +165,7 @@
       <recent name="C:\Users\aleiwe\Desktop\demo\src\main\resources\icons" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.demo [buildPlugin]">
     <configuration name="demo [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -330,6 +317,7 @@
       <workItem from="1710517088726" duration="133000" />
       <workItem from="1710581062293" duration="598000" />
       <workItem from="1710644948625" duration="8426000" />
+      <workItem from="1710720486069" duration="864000" />
     </task>
     <servers />
   </component>
